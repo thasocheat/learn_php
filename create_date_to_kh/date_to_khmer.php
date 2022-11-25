@@ -42,9 +42,9 @@ class Tool{
     }
 
     function khtime($rawtime){
-        $h = $this->toKhNum(date("h", strtotime($rawtime)));
-        $m = $this->toKhNum(date("i", strtotime($rawtime)));
-        $s = $this->toKhNum(date("s", strtotime($rawtime)));
+        $h = $this->toKhNum(date("h", strtotime($rawtime)));//ចាប់តម្លៃជាម៉ោង
+        $m = $this->toKhNum(date("i", strtotime($rawtime)));//ចាប់តម្លៃជានាទី
+        $s = $this->toKhNum(date("s", strtotime($rawtime)));//ចាប់តម្លៃជាវិនាទី
         $am = date('H')<12?"ព្រឹក":"ល្ងាច";
 
         return ('ម៉ោង '.$h.' : '.$m.' : '.$s.' '.$am);
